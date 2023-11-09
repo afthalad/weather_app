@@ -23,7 +23,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   inistate() async {
     await context.read<AddressHelper>().getLiveCoordinates();
-    // Navigator.pushReplacementNamed(context, AppRoutes.mainScreen);
   }
 
   @override

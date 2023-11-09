@@ -23,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   inistate() async {
     await context.read<AddressHelper>().getLiveCoordinates();
+    // Navigator.pushReplacementNamed(context, AppRoutes.mainScreen);
   }
 
   @override
@@ -68,7 +69,9 @@ class _SplashScreenState extends State<SplashScreen> {
                   InkWell(
                     onTap: () {
                       Navigator.pushReplacementNamed(
-                          context, AppRoutes.mainScreen);
+                        context,
+                        AppRoutes.mainScreen,
+                      );
                     },
                     child: GlassContainer(
                       height: 7.h,

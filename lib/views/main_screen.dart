@@ -185,10 +185,6 @@ class _MainScreenState extends State<MainScreen> {
               lastUpdateDateTime,
               style: Theme.of(context).textTheme.titleSmall,
             ),
-            Text(
-              "It feels like ${context.watch<AddressHelper>().weatherDatas[0].weather[0].description}",
-              style: Theme.of(context).textTheme.titleSmall,
-            )
           ],
         ),
       ),
